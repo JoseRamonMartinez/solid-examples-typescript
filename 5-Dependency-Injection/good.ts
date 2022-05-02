@@ -1,4 +1,4 @@
-// An object receives other objects that it depends on.
+// Depend upon abstractions, [not] concretions.
 
 export interface Developer {
   develop(): void;
@@ -10,7 +10,7 @@ export class FrontendDeveloper implements Developer {
   }
   
   private writeHtmlCode(): void {
-      // some method
+      console.log("Frontend: Writing HTML code...");
   }
 }
   
@@ -20,7 +20,7 @@ export class BackendDeveloper implements Developer {
   }
 
   private writeTypeScriptCode(): void {
-    // some method
+    console.log("Backend: Writing TypeScript code...");
   }
 }
   

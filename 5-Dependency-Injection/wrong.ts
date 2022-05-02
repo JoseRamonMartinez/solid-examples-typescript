@@ -1,4 +1,4 @@
-// An object receives other objects that it depends on.
+// Depend upon abstractions, [not] concretions.
 
 export class FrontendDeveloper {
     public writeHtmlCode(): void {
@@ -17,12 +17,12 @@ export class SoftwareProject {
     public backendDeveloper: BackendDeveloper;
 
     constructor() {
-    this.frontendDeveloper = new FrontendDeveloper();
-    this.backendDeveloper = new BackendDeveloper();
+        this.frontendDeveloper = new FrontendDeveloper();
+        this.backendDeveloper = new BackendDeveloper();
     }
 
     public createProject(): void {
-    this.frontendDeveloper.writeHtmlCode();
-    this.backendDeveloper.writeTypeScriptCode();
+        this.frontendDeveloper.writeHtmlCode();
+        this.backendDeveloper.writeTypeScriptCode();
     }
 }
