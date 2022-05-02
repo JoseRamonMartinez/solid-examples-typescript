@@ -1,4 +1,4 @@
-// Client should not be exposed to methods it doesn't need.
+// Many client-specific interfaces are better than one general-purpose interface
 
 interface Character {
     shoot(): void;

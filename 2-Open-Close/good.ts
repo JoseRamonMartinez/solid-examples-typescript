@@ -17,7 +17,7 @@ class Rectangle implements Shape {
     return this.width * this.height;
   }
 }
-  
+
 class Circle implements Shape {
   public radius: number;
   

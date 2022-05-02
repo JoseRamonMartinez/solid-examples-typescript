@@ -1,11 +1,4 @@
-// Client should not be exposed to methods it doesn't need.
-
-export interface Character {
-    shoot(): void;
-    swim(): void;
-    talk(): void;
-    dance(): void;
-}
+// Many client-specific interfaces are better than one general-purpose interface
 
 interface Talker {
     talk(): void;
